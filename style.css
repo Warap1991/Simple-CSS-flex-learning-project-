@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.element{
+    background-color: gold;
+    padding: 20px;
+    border: 1px solid black;
+}
+.container{
+    height: 200vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.element:nth-child(1){
+    order: 2;
+}
+.element{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
